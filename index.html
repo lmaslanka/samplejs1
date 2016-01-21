@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="input-style">
+            <input type="text" id="txtValue" onkeyup="validateInput();">
+            <button id="cmdButton" onclick="addValue();">Insert</button>
+        </div>
+        
+        <br>
+        
+        <div class="container float-left">
+            <div class="title">Even Numbers Statistics</div>
+            <div>
+                <div class="values float-left">Sum: </div>
+                <div class="values float-left" id="evenSum"></div>
+                <div style="clear: both;"></div>    
+            </div>
+            <div>
+                <div class="values float-left">Average: </div>
+                <div class="values float-left" id="evenAvg"></div>
+                <div style="clear: both;"></div>
+            </div>
+            <div>
+                <div class="values float-left">Variance: </div>
+                <div class="values float-left" id="evenVar"></div>
+                <div style="clear: both;"></div>
+            </div>
+            <div>
+                <div class="values float-left">SD: </div>
+                <div class="values float-left" id="evenSD"></div>
+                <div style="clear: both;"></div>
+            </div>            
+        </div>
+        
+        <div class="container float-left">
+            <div class="title">Odd Numbers Statistics</div>
+            <div>
+                <div class="values float-left">Sum: </div>
+                <div class="values float-left" id="oddSum"></div>
+                <div style="clear: both;"></div>    
+            </div>
+            <div>
+                <div class="values float-left">Average: </div>
+                <div class="values float-left" id="oddAvg"></div>
+                <div style="clear: both;"></div>
+            </div>
+            <div>
+                <div class="values float-left">Variance: </div>
+                <div class="values float-left" id="oddVar"></div>
+                <div style="clear: both;"></div>
+            </div>
+            <div>
+                <div class="values float-left">SD: </div>
+                <div class="values float-left" id="oddSD"></div>
+                <div style="clear: both;"></div>
+            </div>   
+        </div>
+        
+        <script src="js/helpers.js"></script>
+        <script src="js/main.js"></script> 
+        
+    </body>
+</html>
